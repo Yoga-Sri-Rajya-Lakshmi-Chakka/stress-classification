@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App</title>
+</head>
+<body>
+    <h1>Stress Detection</h1>
+
+    <form method="post" action="/predict">
+        <label>Snoring Rate</label>
+        <input type="number" name="snoring_rate"><br><br>
+
+        <label>Respiration Rate</label>
+        <input type="number" name="respiration_rate"><br><br>
+       
+        <label>Body Temperature</label>
+        <input type="number" name="body_temperature"><br><br>
+
+        <label>Limb Movement</label>
+        <input type="number" name="limb_movement"><br><br>
+
+        <label>Blood Oxygen</label>
+        <input type="number" name="blood_oxygen"><br><br>
+
+        <label>Eye Movement</label>
+        <input type="number" name="eye_movement"><br><br>
+
+        <label>Sleeping Hours</label>
+        <input type="number" name="sleeping_hours"><br><br>
+
+        <label>Heart Rate</label>
+        <input type="number" name="heart_rate"><br><br>
+
+        <input type="submit" value="Predict">
+        
+    </form>
+
+    <h2> Stress Level Prediction and Detection Result </h2>
+    <p> Stress  Level Detection : {{ prediction }} </p>
+</body>
+</html>
